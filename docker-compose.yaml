@@ -39,4 +39,4 @@ services:
   frontend:
     image: udagram_frontend:latest
     ports:
-      - "81:8100"
+      - "8100:8100"
