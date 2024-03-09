@@ -20,12 +20,15 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
   console.debug("database: "+config.database);
   console.debug("Host: "+config.host);
   console.debug("URL: "+config.backend_url);
+  console.debug("User Backend Port: "+config.backend_port);
+  console.debug("Frontend Port: "+config.frontend_port);
+  
   await sequelize.sync();
 
 
 
   const app = express();
-  const port = process.env.APIFEED_PORT || 8081;
+  const port = process.env.APIFEED_PORT || 8082;
 
 
   app.use(bodyParser.json());

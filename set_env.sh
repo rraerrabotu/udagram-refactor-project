@@ -8,11 +8,9 @@ export AWS_BUCKET=udacity-udagram-application-images
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=testing
-export APIUSER_PORT=8080
-export APIFEED_PORT=8080
+export APIUSER_PORT=8081
+export APIFEED_PORT=8082
 export FRONTEND_PORT=8100
-export APIUSER_URL=http://localhost:8080
-export APIFEED_URL=http://localhost:8080
-export FRONTEND_URL=http://localhost:8100
 export NODE_OPTIONS=--openssl-legacy-provider
+export URL="http://localhost:8100"
 

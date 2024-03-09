@@ -21,12 +21,15 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
   console.debug("database: "+config.database);
   console.debug("Host: "+config.host);
   console.debug("URL: "+config.backend_url);
+  console.debug("User Backend Port: "+config.backend_port);
+  console.debug("Frontend Port: "+config.frontend_port);
+
   await sequelize.sync();
 
 
 
   const app = express();
-  const port = process.env.APIUSER_PORT || 8080;
+  const port = process.env.APIUSER_PORT || 8081;
   //const port = 8080;
 
   app.use(bodyParser.json());
