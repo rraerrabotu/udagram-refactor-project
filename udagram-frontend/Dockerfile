@@ -2,7 +2,7 @@
 FROM beevelop/ionic:latest AS ionic
 ## Create app directory
 WORKDIR /usr/src/app
-COPY www /usr/share/nginx/html
+#COPY www /usr/share/nginx/html
 
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -13,6 +13,11 @@ RUN npm install -f
 COPY . .
 ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN ionic build
+
+## Run
+FROM nginx:alpine
+#COPY www /usr/share/nginx/html
+COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
 
 EXPOSE 8100
 ENTRYPOINT ["ionic"]
