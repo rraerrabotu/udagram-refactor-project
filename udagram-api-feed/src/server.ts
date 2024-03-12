@@ -28,7 +28,7 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
 
 
   const app = express();
-  const port = process.env.APIFEED_PORT || 8082;
+  const port = process.env.APIFEED_PORT || 8080;
 
 
   app.use(bodyParser.json());

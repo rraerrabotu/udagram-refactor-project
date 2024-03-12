@@ -29,7 +29,7 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
 
 
   const app = express();
-  const port = process.env.APIUSER_PORT || 8081;
+  const port = process.env.APIUSER_PORT || 8080;
   //const port = 8080;
 
   app.use(bodyParser.json());
