@@ -18,6 +18,8 @@ spec:
       - image: rreddy821/udagram-api-user:latest
         name: backend-user
         imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
         resources:
           requests:
             memory: "64Mi"
