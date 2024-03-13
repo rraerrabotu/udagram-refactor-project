@@ -16,5 +16,5 @@ RUN ionic build
 
 EXPOSE 8100
 ENTRYPOINT ["ionic"]
-CMD ["serve", "--external", "--no-open"]
+CMD ["serve", "-p 8100", "--external", "--no-open"]
 
