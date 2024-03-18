@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   appName: 'Udagram',
-  apiHost: 'http://localhost:8080/api/v0'
+  apiHost: 'http://a4ab761fdc86e4d96a38d57dd385089b-624779264.us-east-2.elb.amazonaws.com:8080/api/v0'
+  //apiHost: 'http://:8080/api/v0'
   //apiHost: 'http://reverseproxy.default.svc.cluster.local:8080/api/v0'
 };
 
