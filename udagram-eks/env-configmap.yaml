@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: udacity-udagram-application-images
+  AWS_BUCKET: udacity-udagram-application-images-2
   AWS_PROFILE: default
   AWS_REGION: us-east-2
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udagram-ms-project-db.cqaeh2bjj4cv.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: udagram-ms-project-db-1.cstyeuhjxn6n.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config
