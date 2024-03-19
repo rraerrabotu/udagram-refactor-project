@@ -16,5 +16,5 @@ RUN ionic build
 
 EXPOSE 8100
 ENTRYPOINT ["ionic"]
-CMD ["serve", "-p 8100", "--host 0.0.0.0 --disable-host-check","--external", "--no-open"]
+CMD ["serve", "-p 8100", "--host 0.0.0.0 --disable-host-check true","--external", "--no-open"]
 
